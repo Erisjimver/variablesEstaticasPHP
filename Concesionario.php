@@ -15,8 +15,7 @@
 					$this->precio_base=10000;
 				
 			}else if($gama=="compacto"){
-				
-				
+								
 					$this->precio_base=20000;	
 				
 			}
