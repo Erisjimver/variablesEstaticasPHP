@@ -4,7 +4,8 @@
 		
 		private $precio_base;
 		
-		private static $ayuda=4500;
+		//private static $ayuda=4500;
+		private static $ayuda=0;
 		
 		//function Compra_vehiculo($gama){		
 		function __construct($gama){
@@ -30,7 +31,11 @@
 		}// fin constructor
 		
 		
-		
+		static function descuento_gobierno(){//inicia  funcion estatica del descuento
+
+			self::$ayuda=4500;
+
+		}
 		
 		function climatizador(){		
 			
@@ -74,6 +79,7 @@
 		
 		function precio_final(){
 			
+			//$valor_final=$this->precio_base-self::$ayuda;
 			$valor_final=$this->precio_base-self::$ayuda;
 			
 			return $valor_final;	
