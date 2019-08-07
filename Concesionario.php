@@ -4,10 +4,10 @@
 		
 		private $precio_base;
 		
-		static $ayuda=4500;
+		private static $ayuda=4500;
 		
-				
-		function Compra_vehiculo($gama){
+		//function Compra_vehiculo($gama){		
+		function __construct($gama){
 			
 			if($gama=="urbano"){
 				
