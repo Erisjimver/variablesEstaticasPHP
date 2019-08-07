@@ -32,8 +32,15 @@
 		
 		
 		static function descuento_gobierno(){//inicia  funcion estatica del descuento
-
-			self::$ayuda=4500;
+			//if(date("m-d-y")>"05-01-20")
+			if(date("m-d-y")>"12-01-20")
+			{
+				self::$ayuda=4500;	
+			}
+			else{
+				self::$ayuda=0;
+			}
+			
 
 		}
 		
